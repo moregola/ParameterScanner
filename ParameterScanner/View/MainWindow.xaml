@@ -1,0 +1,21 @@
+﻿<Window x:Class="ParameterScanner.View.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+        xmlns:ribbon="clr-namespace:System.Windows.Controls.Ribbon;assembly=System.Windows.Controls.Ribbon"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="800" Background="#FF212020">
+    <Grid Background="Black">
+        <ribbon:Ribbon>
+            <ribbon:RibbonTab Header="Autodesk">
+                <ribbon:RibbonGroup x:Name="ribbonGroup" Header="Searcher" >
+                    <ribbon:RibbonButton Click="RibbonButton_Click" LargeImageSource="/ParameterScanner;component/Asset/JMPg9BAn_400x400.jpg" SmallImageSource="/ParameterScanner;component/Asset/JMPg9BAn_400x400.jpg"/>
+                </ribbon:RibbonGroup>
+            </ribbon:RibbonTab>
+        </ribbon:Ribbon>
+        <ContentControl Name="window1" HorizontalAlignment="Center" Height="500" Margin="0,62,0,0" VerticalAlignment="Top" Width="800" Background="#FF656262" Visibility="Hidden"/>
+        <Button x:Name="Button" Content="Parameter Search" HorizontalAlignment="Center" Height="50" VerticalAlignment="Top" Width="800" FontSize="24" FontFamily="Revit_HEB_DWG" BorderThickness="1,1,1,7" BorderBrush="Black" Click="Button_Click" Margin="0,141,0,0"/>
+        <ContentControl Name="searchControlHost" HorizontalAlignment="Center" Height="378" Margin="0,196,0,0" VerticalAlignment="Top" Width="450" Background="#FF656262" Visibility="Hidden"/>
+    </Grid>
+</Window>
