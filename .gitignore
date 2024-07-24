@@ -1,0 +1,10 @@
+
+
+
+bin\
+bin\*
+obj\
+obj\*
+/.vs/ParameterScanner
+/ParameterScanner/bin/x64/D2020
+/ParameterScanner/obj/x64/D2020
